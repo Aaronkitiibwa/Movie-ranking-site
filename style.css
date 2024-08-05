@@ -1,0 +1,26 @@
+#search-area{
+  border: none;
+  margin:auto;
+  width: fit-content;
+  /* margin-top: 4px; */
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 3px;
+  /* padding-top: 3px; */
+  box-shadow: 6px 6px 6px 6px gray;
+  margin-left: 60px;
+  
+}
+
+.nav-bar{
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+#quick-search{
+  align-items: center;
+  justify-content: space-between;
+}

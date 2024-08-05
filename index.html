@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Developing Cinemax using Tailwind and Daisy UI</title>
+    <link rel="icon" type="image/x-icon" href="/images/favico.io.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+
+  <body class="font-Roboto bg-gray-900">
+    <header>
+      <div class="navbar bg-base-100 bg-[#000000] text-[#FEFDED] h-30 flex justify-between py-20">
+        <img class="w-16 md:w-32 lg:w-48"
+        src="./images/TREASURE-ONE.png" alt="treasure">
+      
+<div id="search-area">
+<input type="text" placeholder="search here?" class="py-2 rounded-md bg-black border-white">
+<i class='bx bx-search-alt-2' width="600px"></i>
+</div>
+<div class="navbar justify-end">
+       <details class="dropdown">
+        <summary class="mx-20 btn px-8 justify-end">Genres</summary>
+        <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-[#000000]">
+          <li><a href="https://youtu.be/vOY0DGbgFlg?si=XGonDnDWlIRG7q2W" target="_blank">Action</a></li>
+          <li><a href="https://youtu.be/4gwMlMv5w8A?si=IkSjUvhC2RlsD9WO" target="_blank">Adventure</a></li>
+          <li><a href="https://youtu.be/QOvElToPM10?si=AZgc7Lx90iuKkDMe" target="_blank">Romance</a></li>
+          <li><a href="https://youtu.be/b6uFspnZWCc?si=eQ-LintyeWra7u8Y" target="_blank">Sci-Fi</a></li>
+        </ul>
+      </details>
+      <div id="quick-search">
+      
+      </div>
+          </div>   
+        </div>
+    </header>
+    <hr />
+    <main>
+      <div class="bg-purple-900 md-20">
+        
+        <div class="pb-4">
+        <h2  class="px-2 py-10 text-[#FF9A00] text-5xl text-center">
+          Movie Ranking Site
+        </h2>
+<p class="px-2 py-2 text-[#FF9A00] text-center text-xl">
+  Welcome to our curated collection of top-rated films, 
+  <br>where every movie lover can find something to cherish. 
+  <br>Our comprehensive rankings and reviews are here to guide you
+  <br> through the mesmerizing world of cinema.
+</p>
+        </div>
+      <div class="carousel w-full h-lvh mt-10">
+        <div id="item2" class="carousel-item w-full">
+          <img 
+           src="./images/image 2.jpg" class="w-full" />
+        </div> 
+        <div id="item3" class="carousel-item w-full">
+          <img 
+          src="/images/image 3.jpg" class="w-full" />
+        </div> 
+        <div id="item4" class="carousel-item w-full">
+          <img 
+          src="/images/main image.jpg" class="w-full" />
+        </div>
+      </div> 
+      <div class="flex justify-center w-full py-2 gap-2">
+        <a href="#item1" class="btn btn-xs">1</a> 
+        <a href="#item2" class="btn btn-xs">2</a> 
+        <a href="#item3" class="btn btn-xs">3</a> 
+        <a href="#item4" class="btn btn-xs">4</a>
+      </div>
+     
+      
+      <h2 class="text-[#FF9A00] text-center text-3xl mb-4">Movie Genres</h2>
+      <div class="flex gap-2 mx-2 justify-center">
+      <div class="card bg-base-100 w-60 shadow-xl">
+        <figure>
+          <img
+            src="./images/action movies.jpg"
+            alt="action" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Action Movies
+            <div class="badge badge-secondary"><button><a href="https://youtu.be/vOY0DGbgFlg?si=XGonDnDWlIRG7q2W">New</a></button></div>
+          </h2>
+          <p>Enjoy the thrilling zone of Action</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline"><button>Buy</button></div>
+            <div class="badge badge-outline">Rent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 w-60 shadow-xl">
+        <figure>
+          <img
+            src="images/romance.jpg"
+            alt="romance" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Romance
+            <div class="badge badge-secondary"><button><a href="https://youtu.be/QOvElToPM10?si=AZgc7Lx90iuKkDMe">NEW</button></a></div>
+          </h2>
+          <p>Explore epic Romace episodes to light up your best moments</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline"><a href="#">Buy</a></div>
+            <div class="badge badge-outline"><a href="#">Rent</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-60 shadow-xl">
+        <figure>
+          <img
+            src="/images/sci-fi.jpg"
+            alt="sci-fi" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Sci-Fi
+            <div class="badge badge-secondary"><button><a href="https://youtu.be/b6uFspnZWCc?si=eQ-LintyeWra7u8Y">NEW</a></button></div>
+          </h2>
+          <p>Turn your Adrenaline into a rush today</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline"><a href="#">Buy</a></div>
+            <div class="badge badge-outline"><a href="#">Rent</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-60 shadow-xl">
+        <figure>
+          <img 
+            src="images/adventure.jpg"
+            alt="adventure" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Adventure
+            <div class="badge badge-secondary"><button><a href="https://youtu.be/4gwMlMv5w8A?si=IkSjUvhC2RlsD9WO"></a>NEW</button></div>
+          </h2>
+          <p>Spark your world of Adventure today</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline"><a href="#">BUY</a></div>
+            <div class="badge badge-outline"><a href="#">Rent</a></div>
+          </div>
+        </div>
+      </div>
+      </div>
+ <h2 class="px-6 text-[#FF9A00] text-center my-10 text-xl">
+      Top Five Movies
+    </h2>
+<div class="flex gap-2 mx-2 mt-10  justify-center">
+
+  <div class="card bg-base-100 w-60 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title justify-center">Kungfu Panda</h2>
+    <button class="bg-purple-900 text-[white] text-center"><a href="https://www.youtube.com/watch?v=_inKs4eeHiI&pp=ygUPa3VuZyBmdSBwYW5kYSA0"> watch Now</a></button>
+    </div>
+    <figure>
+      <img
+        src="images/kung-fu-panda-3-portrait.jpg"
+        alt="kunfu-panda" />
+    </figure>
+  </div>
+
+  <div class="card bg-base-100 w-60 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title justify-center">Elemental</h2>
+      <button class="bg-purple-900 text-[white] text-center"><a href="https://www.youtube.com/watch?v=DwuJeGYlYyw&list=PLnvtEe_Ba_jxxPc1ieO7dBUhxfrYsJnB4"> watch Now</a></button>
+    </div>
+    <figure>
+      <img
+        src="images/elemental.jpg"
+        alt="elemental" />
+    </figure>
+  </div>
+
+  <div class="card bg-base-100 w-60 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title justify-center">Wakanda Forever</h2>
+      <button class="bg-purple-900 text-[white] text-center"><a href="https://www.youtube.com/watch?v=RlOB3UALvrQ&pp=ygUPd2FrYW5kYSBmb3JldmVy"> watch Now</a></button>
+    </div>
+    <figure>
+      <img 
+        src="images/Black_Panther_Wakanda_Forever_poster.jpg"
+        alt="Shoes" />
+    </figure>
+  </div>
+
+  <div class="card bg-base-100 w-60 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title justify-center">Ice age</h2>
+      <button class="bg-purple-900 text-[white] text-center"><a href="https://www.youtube.com/watch?v=RlOB3UALvrQ&pp=ygUPd2FrYW5kYSBmb3JldmVy"> watch Now</a></button>
+    </div>
+    <figure>
+      <img
+        src="images/ice-age.jpeg"
+        alt="ice-age" />
+    </figure>
+  </div>
+
+</div>
+  </div>
+</div>
+      
+    </main>
+    <footer>
+<div class="bg mx-2 rounded-dm mt-10">
+        <footer class="footer bg-gray-900 text-neutral-content p-10">
+          <nav>
+            <h6 class="footer-title">Wishlist</h6>
+            <a class="link link-hover">Movies</a>
+            <a class="link link-hover">Genres</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Wishlist</h6>
+            <a class="link link-hover">Movies</a>
+            <a class="link link-hover">Genres</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+          </nav>
+          
+          <h2>Subscribe To our Newsletter</h2> <input class="py-1 rounded-sm" type="text" placeholder="Email"> <button class="bg-[white] text-[black] px-6 rounded-sm"><a href="mailto:nakyenalire@gmail.com"></a>Submit</button>
+          <div>
+          <h2>Contact Us</h2>
+          <i class='bx bxl-twitter' ></i>
+          <i class='bx bxl-instagram-alt' ></i>
+         <a href="https://linkedin.com/in/aaron-nakyenalire"> <i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </footer>
+      <p>© 2024 All Rights Reserved</p>
+    </div>
+  </section>
+ 
+  </body>
+</html>
